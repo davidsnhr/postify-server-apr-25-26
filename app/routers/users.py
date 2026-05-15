@@ -11,8 +11,6 @@ from app.models.user import User
 from app.schemas.user import UserCreate, UserRead
 
 
-
-
 router = APIRouter(prefix="/users", tags=["users"])
 
 @router.get('/', response_model=List[UserRead])
